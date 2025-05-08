@@ -5,31 +5,25 @@ using UnityEngine.UI;
 
 public class ImageScript : MonoBehaviour
 {
-    public GameObject bean;
-    public GameObject teddy;
-    public GameObject car;
-    public GameObject lady;
-    public GameObject left;
-    public GameObject right;
+    
     public GameObject imageField;
     public Sprite[] soriteArray;
-    public GameObject scaleSlider;
-    public GameObject rotationSlider;
+    public GameObject widthSlider;
+    public GameObject heightSlider;
 
 
-    public void ChangeScale()
+    public void ChangeWidth()
     {
-        float currentScale = scaleSlider.GetComponent<Slider>().value;
-        imageField.transform.localScale = 
-            new Vector2(1F*currentScale, 1F*currentScale);
+        float currentWidth = widthSlider.GetComponent<Slider>().value;
+        Vector3 currentScale = imageField.transform.localScale;
+        imageField.transform.localScale = new Vector3(currentWidth, currentScale.y, currentScale.z);
     }
 
-    public void ChangeRotation()
+    public void ChangeHeight()
     {
-        float currentRotation =
-            rotationSlider.GetComponent<Slider>().value;
-        imageField.transform.localRotation =
-            Quaternion.Euler(0, 0, currentRotation * 360);
+        float currentHeight = heightSlider.GetComponent<Slider>().value;
+        Vector3 currentScale = imageField.transform.localScale;
+        imageField.transform.localScale = new Vector3(currentScale.x, currentHeight, currentScale.z);
     }
 
     public void Dropdown (int index)
@@ -42,37 +36,9 @@ public class ImageScript : MonoBehaviour
 
         else if (index == 2)
             imageField.GetComponent<Image>().sprite = soriteArray[2];
+        else if(index == 3)
+            imageField.GetComponent<Image>().sprite = soriteArray[3];
     }
 
-    public void ToggleBean(bool value)
-    {
-        bean.SetActive(value);
-        left.GetComponent<Toggle>().interactable = value;
-        right.GetComponent<Toggle>().interactable = value;
-    }
-
-    public void ToggleTeddy(bool value)
-    {
-        teddy.SetActive(value);
-    }
-
-    public void ToggleCar(bool value)
-    {
-        car.SetActive(value);
-    }
-
-    public void ToggleLady(bool value)
-    {
-        lady.SetActive(value);
-    }
-
-    public void ToLeft()
-    {
-        bean.transform.localScale = new Vector2 (1, 1);
-    }
-
-    public void ToRight()
-    {
-        bean.transform.localScale = new Vector2(-1, 1);
-    }
+    
 }
