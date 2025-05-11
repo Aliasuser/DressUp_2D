@@ -38,6 +38,12 @@ public class ImageScript : MonoBehaviour
             imageField.GetComponent<Image>().sprite = soriteArray[2];
         else if(index == 3)
             imageField.GetComponent<Image>().sprite = soriteArray[3];
+        else if(index == 4)
+            imageField.GetComponent<Image>().sprite = soriteArray[4];
+        else if (index == 5)
+            imageField.GetComponent<Image>().sprite = soriteArray[5];
+        else if (index == 6)
+            imageField.GetComponent<Image>().sprite = soriteArray[6];
     }
 
     
