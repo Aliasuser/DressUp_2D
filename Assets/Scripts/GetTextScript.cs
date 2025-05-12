@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class GetTextScript : MonoBehaviour
 {
-    private int number = 0;
     string text;
     int randText;
     public GameObject NameInput;
@@ -18,8 +17,30 @@ public class GetTextScript : MonoBehaviour
     public void ShowText()
     {
         text = NameInput.GetComponent<Text>().text;
+        if (text.Length < 4 || text.Length > 10)
+        {
+            textField.GetComponent<Text>().text = "Vārda garumam jābūt no 4 līdz 10 simboliem!";
+            return;
+        }
+
         textYear = BirthInput.GetComponent<Text>().text;
-        year = currentYear - (Int32.Parse(textYear));
+        int birthYear;
+        if (!Int32.TryParse(textYear, out birthYear))
+        {
+            textField.GetComponent<Text>().text = "Lūdzu ievadi derīgu dzimšanas gadu!";
+            return;
+        }
+
+        year = currentYear - birthYear;
+        if (birthYear > 2024 || birthYear < 1900)
+        {
+            textField.GetComponent<Text>().text = "Dzimšanas gadam jābūt starp 1900 un 2024!";
+            return;
+        }
+
         textField.GetComponent<Text>().text = "Sveiks " + text + ", tev ir " + year + " gadi!";
     }
+
+    
+
 }
