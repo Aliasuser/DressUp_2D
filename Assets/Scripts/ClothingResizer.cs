@@ -27,8 +27,8 @@ public class ClothingResizer : MonoBehaviour
         heightSlider.minValue = 10;
         heightSlider.maxValue = 500;
 
-        widthSlider.value = currentItem.sizeDelta.x;
-        heightSlider.value = currentItem.sizeDelta.y;
+        //widthSlider.value = currentItem.sizeDelta.x;
+        //heightSlider.value = currentItem.sizeDelta.y;
     }
 
     void OnWidthChanged(float newW)

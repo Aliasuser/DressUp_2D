@@ -226,6 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7a60afe9f2b7c4299fc203480cb881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  widthSlider: {fileID: 2020838402}
+  heightSlider: {fileID: 756743767}
 --- !u!225 &15127013
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2425,6 +2427,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7a60afe9f2b7c4299fc203480cb881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  widthSlider: {fileID: 2020838402}
+  heightSlider: {fileID: 756743767}
 --- !u!114 &697386676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2597,10 +2601,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 2116210177}
   m_HandleRect: {fileID: 1071984076}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 5
+  m_MinValue: 10
+  m_MaxValue: 500
   m_WholeNumbers: 0
-  m_Value: 0.75
+  m_Value: 244
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3006,6 +3010,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7a60afe9f2b7c4299fc203480cb881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  widthSlider: {fileID: 2020838402}
+  heightSlider: {fileID: 756743767}
 --- !u!225 &1009470983
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3377,6 +3383,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7a60afe9f2b7c4299fc203480cb881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  widthSlider: {fileID: 2020838402}
+  heightSlider: {fileID: 756743767}
 --- !u!225 &1159755584
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4011,6 +4019,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7a60afe9f2b7c4299fc203480cb881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  widthSlider: {fileID: 2020838402}
+  heightSlider: {fileID: 756743767}
 --- !u!225 &1336689189
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4200,6 +4210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7a60afe9f2b7c4299fc203480cb881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  widthSlider: {fileID: 2020838402}
+  heightSlider: {fileID: 756743767}
 --- !u!114 &1349739934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4705,6 +4717,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7a60afe9f2b7c4299fc203480cb881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  widthSlider: {fileID: 2020838402}
+  heightSlider: {fileID: 756743767}
 --- !u!1 &1454099344
 GameObject:
   m_ObjectHideFlags: 0
@@ -4948,6 +4962,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7a60afe9f2b7c4299fc203480cb881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  widthSlider: {fileID: 2020838402}
+  heightSlider: {fileID: 756743767}
 --- !u!114 &1480852044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5349,6 +5365,12 @@ MonoBehaviour:
   audioSource: {fileID: 1200960771}
   audioClips:
   - {fileID: 8300000, guid: f9a978c1a1a79aa4c8260d932654c1d5, type: 3}
+  - {fileID: 8300000, guid: c361b508003988a4a987b9ee7c6fb9bb, type: 3}
+  - {fileID: 8300000, guid: 48ee083e04f86b64690598284fa4693a, type: 3}
+  - {fileID: 8300000, guid: 5a3b1f7b8b4c3fc4e9619e29cd9e812b, type: 3}
+  - {fileID: 8300000, guid: 8a2a26dd4dee38e47aeb6081c45d0c78, type: 3}
+  - {fileID: 8300000, guid: 1224f9b12858a43468cac004843535ad, type: 3}
+  - {fileID: 8300000, guid: dc42cae0dff81a74b9f6698875f266c6, type: 3}
 --- !u!1 &1515209225
 GameObject:
   m_ObjectHideFlags: 0
@@ -7315,6 +7337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7a60afe9f2b7c4299fc203480cb881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  widthSlider: {fileID: 2020838402}
+  heightSlider: {fileID: 756743767}
 --- !u!225 &1974949472
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -7410,10 +7434,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 573358009}
   m_HandleRect: {fileID: 1524146089}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 5
+  m_MinValue: 10
+  m_MaxValue: 500
   m_WholeNumbers: 0
-  m_Value: 0.75
+  m_Value: 167
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

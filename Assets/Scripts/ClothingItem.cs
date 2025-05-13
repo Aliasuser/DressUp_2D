@@ -11,23 +11,35 @@ public class ClothingItem : MonoBehaviour,
     CanvasGroup cg;
     ClothingResizer resizer;
 
+    
+    public GameObject widthSlider;
+    public GameObject heightSlider;
+
     void Awake()
     {
         rect = GetComponent<RectTransform>();
         cg = GetComponent<CanvasGroup>();
         canvas = GetComponentInParent<Canvas>();
         resizer = FindObjectOfType<ClothingResizer>();
+
+        
+        widthSlider.SetActive(false);
+        heightSlider.SetActive(false);
     }
 
-  
     public void OnPointerClick(PointerEventData e)
     {
+        
+        widthSlider.SetActive(true);
+        heightSlider.SetActive(true);
+
         resizer.SetCurrentItem(rect);
     }
 
-    
     public void OnBeginDrag(PointerEventData e)
     {
+        widthSlider.SetActive(true);
+        heightSlider.SetActive(true);
         cg.alpha = 0.6f;
         cg.blocksRaycasts = false;
         resizer.SetCurrentItem(rect);
